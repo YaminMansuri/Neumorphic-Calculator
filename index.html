@@ -6,32 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Calculator</title>
 
+		<link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="container">
+		<div class="container align-center">
 			<div class="grid calculator">
-				<input type="text" id="output-screen" />
-				<button>C</button>
-				<button>DEL</button>
-				<button onclick="display('%')">%</button>
-				<button onclick="display('/')">/</button>
+				<input type="text" id="output-screen" readonly />
+				<button class="text-color" onclick="allClear()">C</button>
+				<button class="text-color" onclick="del()">DEL</button>
+				<button class="text-color" onclick="display('%')">%</button>
+				<button class="text-color" onclick="display('/')">&#247</button>
 				<button onclick="display(7)">7</button>
 				<button onclick="display(8)">8</button>
 				<button onclick="display(9)">9</button>
-				<button onclick="display('*')">x</button>
+				<button class="text-color" onclick="display('*')">x</button>
 				<button onclick="display(4)">4</button>
 				<button onclick="display(5)">5</button>
 				<button onclick="display(6)">6</button>
-				<button onclick="display('-')">-</button>
+				<button class="text-color" onclick="display('-')">-</button>
 				<button onclick="display(1)">1</button>
 				<button onclick="display(2)">2</button>
 				<button onclick="display(3)">3</button>
-				<button onclick="display('+')">+</button>
+				<button class="text-color" onclick="display('+')">+</button>
 				<button onclick="display('.')">.</button>
 				<button onclick="display(0)">0</button>
-
-				<button onclick="calculate()" class="equal-to">=</button>
+				<button class="equal-to" onclick="calculate()">=</button>
 			</div>
 		</div>
 		<script src="app.js"></script>
